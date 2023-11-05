@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Nov 05 19:28:38 GMT 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-018b-a0f5-6402-00001886fdd8 
+on database directory memory:/Users/pratikshabiradar/Microservice/MicroserviceCRUD/testdb with class loader sun.misc.Launcher$AppClassLoader@73d16e93 
+Loaded from file:/Users/pratikshabiradar/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.14.1.0/3bcd8b1af3f8cd022d54d331e00064776be04f9c/derby-10.14.1.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=/Users/pratikshabiradar/Microservice/MicroserviceCRUD
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.16
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

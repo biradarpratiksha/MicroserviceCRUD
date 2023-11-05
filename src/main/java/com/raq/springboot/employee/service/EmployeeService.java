@@ -2,6 +2,7 @@ package com.raq.springboot.employee.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,17 +18,16 @@ public class EmployeeService {
 	
 
 	public List<Employee> getEmployees() {
-		List<Employee> employees = new ArrayList<Employee>();
+		List<Employee> employees = new ArrayList<>();
 		employeeDAO.findAll().forEach(employees::add);
 		System.out.println("EmployeeService.getEmployees() invoked " + employees );
 		return employees;
 	}
 	
 	public Employee getEmployee(int id) {
-//		Employee employee = employeeDAO.findOne(new Integer(id));
-//		System.out.println("EmployeeService.getEmployee(id) invoked " + employee );
-//		return employee;
-		return null;
+		Optional<Employee> employee = employeeDAO.findById(id);
+		System.out.println("EmployeeService.getEmployee(id) invoked " + employee );
+		return employee.get();
 	}
 
 	public void addEmployee(Employee employee) {
@@ -42,9 +42,8 @@ public class EmployeeService {
 	}
 
 	public void deleteEmployee(int id) {
-	//	employeeDAO.delete(new Integer(id));
+		Optional<Employee> employee = employeeDAO.findById(id);
+		employeeDAO.delete(employee.get());
 		System.out.println("EmployeeService.deleteEmployee() invoked " + id);
 	}
-
-	
 }

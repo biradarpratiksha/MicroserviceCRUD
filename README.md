@@ -11,11 +11,7 @@
 * Configure server.port = 8080 in application.properties
 
 **Tech Stack**
-
-**Implemented Versions**
-* http://localhost:8080/v1/microservice/employees
-* http://localhost:8080/v2/microservice/employees
-
+Derby
 
 **Invoking the Rest Controller**
 * GET   		/employees 			Gets all the employees   http://localhost:8080/v1/employee/employees
