@@ -22,10 +22,10 @@ Derby
 
 
 **JSON Request Sample**
-* POST : {"id":5,"name":"AbdulRaafay2","age":50,"salary":5000.0}
-* GET  : [{"id":5,"name":"AbdulRaafay2","age":50,"salary":5000.0},{"id":1,"name":"AbdulRaafay1","age":10,"salary":1000.0},{"id":2,"name":"AbdulRaafay2","age":20,"salary":2000.0}]
+* POST : {"id":5,"name":"EmployeName5","age":50,"salary":5000.0}
+* GET  : [{"id":5,"name":"EmployeName5","age":50,"salary":5000.0},{"id":1,"name":"EmployeName1","age":10,"salary":1000.0},{"id":2,"name":"EmployeName2","age":20,"salary":2000.0}]
 * DELETE : http://localhost:8080/employees/5
-* PUT : {"id":5,"name":"Shayan","age":5,"salary":15000.0}
+* PUT : {"id":5,"name":"EmployeName5","age":5,"salary":15000.0}
 
 
 
